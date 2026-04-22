@@ -1,10 +1,10 @@
 :root {
-  --color-pageBackground: #fbf1c7;
+  --color-pageBackground: #f2e5bc;
   --color-pageBackgroundModalActive: #ebdbb2;
-  --color-pageBackgroundTopLeft: #fbf1c7;
-  --color-pageBackgroundBottomRight: #f2e5bc;
-  --color-pageBackgroundLineTop: #f9f5d7;
-  --color-pageBackgroundLineMid: #fbf1c7;
+  --color-pageBackgroundTopLeft: #f2e5bc;
+  --color-pageBackgroundBottomRight: #ebdbb2;
+  --color-pageBackgroundLineTop: #fbf1c7;
+  --color-pageBackgroundLineMid: #f2e5bc;
   --color-pageBackgroundLineBottom: #ebdbb2;
   --color-pageText: #3c3836;
   --color-pageTextLight: #504945;
@@ -59,13 +59,13 @@
   --color-menuAutoCompleteTextHeader: #fabd2f;
   --color-menuAutoCompleteItemTextHover: #fbf1c7;
   --color-menuAutoCompleteItemText: #d5c4a1;
-  --color-modalBackground: #fbf1c7;
+  --color-modalBackground: #f2e5bc;
   --color-modalBorder: #d5c4a1;
   --color-mobileHeaderBackground: #d79921;
   --color-mobileHeaderText: #fbf1c7;
   --color-mobileHeaderTextSubdued: #ebdbb2;
   --color-mobileHeaderTextHover: rgba(215, 153, 33, 0.2);
-  --color-mobilePageBackground: #fbf1c7;
+  --color-mobilePageBackground: #f2e5bc;
   --color-mobileNavBackground: #f9f5d7;
   --color-mobileNavItem: #7c6f64;
   --color-mobileNavItemSelected: #af3a03;
@@ -118,7 +118,7 @@
   --color-calendarBackground: #3c3836;
   --color-calendarItemText: #d5c4a1;
   --color-calendarItemBackground: #504945;
-  --color-calendarSelectedBackground: #d79921;
+  --color-calendarSelectedBackground: #665c54;
   --color-noticeBackground: #d5c4a1;
   --color-noticeBackgroundLight: #ebdbb2;
   --color-noticeBackgroundDark: #79740e;
@@ -144,7 +144,7 @@
   --color-formLabelText: #7c6f64;
   --color-formLabelBackground: #ebdbb2;
   --color-formInputBackground: #f9f5d7;
-  --color-formInputBackgroundSelected: #fbf1c7;
+  --color-formInputBackgroundSelected: #f2e5bc;
   --color-formInputBackgroundSelection: #d65d0e;
   --color-formInputBorder: #d5c4a1;
   --color-formInputTextReadOnlySelection: #fbf1c7;
@@ -184,14 +184,28 @@
   --color-noteTagDefault: #504945;
   --color-noteTagText: #3c3836;
   --color-budgetOtherMonth: #f2e5bc;
-  --color-budgetCurrentMonth: #fbf1c7;
+  --color-budgetCurrentMonth: #f2e5bc;
   --color-budgetHeaderOtherMonth: #ebdbb2;
-  --color-budgetHeaderCurrentMonth: #fbf1c7;
+  --color-budgetHeaderCurrentMonth: #f2e5bc;
   --color-floatingActionBarBackground: #3c3836;
   --color-floatingActionBarBorder: #504945;
   --color-floatingActionBarText: #ebdbb2;
   --color-tooltipText: #3c3836;
-  --color-tooltipBackground: #fbf1c7;
+  --color-tooltipBackground: #f2e5bc;
   --color-tooltipBorder: #d5c4a1;
   --color-calendarCellBackground: #ebdbb2;
+
+  /* Money amounts (budget/transactions/to-budget/templates) */
+  --color-numberPositive: #79740e;
+  --color-numberNegative: #cc241d;
+  --color-numberNeutral: #3c3836;
+  --color-budgetNumberZero: #7c6f64;
+  --color-budgetNumberNeutral: #3c3836;
+  --color-budgetNumberPositive: #3c3836;
+  --color-budgetNumberNegative: #cc241d;
+  --color-templateNumberFunded: #79740e;
+  --color-templateNumberUnderFunded: #af3a03;
+  --color-toBudgetPositive: #79740e;
+  --color-toBudgetZero: #79740e;
+  --color-toBudgetNegative: #cc241d;
 }
