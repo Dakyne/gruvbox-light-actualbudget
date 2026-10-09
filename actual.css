@@ -1,4 +1,5 @@
 :root {
+  /* Contrast tints are precomputed mixes of Gruvbox colors; Actual accepts simple CSS values only. */
   /* Page backgrounds — bg0 */
   --color-pageBackground: #fbf1c7;
   --color-pageBackgroundModalActive: #ebdbb2;
@@ -11,11 +12,11 @@
   /* Page text */
   --color-pageText: #3c3836;
   --color-pageTextLight: #504945;
-  --color-pageTextSubdued: #7c6f64;
+  --color-pageTextSubdued: #665c54;
   --color-pageTextDark: #282828;
-  --color-pageTextPositive: #79740e;
+  --color-pageTextPositive: var(--color-numberPositive);
   --color-pageTextLink: #076678;
-  --color-pageTextLinkLight: #458588;
+  --color-pageTextLinkLight: #076678;
 
   /* Cards */
   --color-cardBackground: #f9f5d7;
@@ -27,10 +28,10 @@
   --color-tableRowBackgroundHover: #ebdbb2;
   --color-tableText: #3c3836;
   --color-tableTextLight: #504945;
-  --color-tableTextSubdued: #7c6f64;
+  --color-tableTextSubdued: #665c54;
   --color-tableTextSelected: #282828;
   --color-tableTextHover: #282828;
-  --color-tableTextInactive: #928374;
+  --color-tableTextInactive: #665c54;
   --color-tableHeaderText: #504945;
   --color-tableHeaderBackground: #f9f5d7;
   --color-tableBorder: #d5c4a1;
@@ -50,20 +51,20 @@
   --color-sidebarItemBackgroundHover: #ebdbb2;
   --color-sidebarItemAccentSelected: #af3a03;
   --color-sidebarItemText: #3c3836;
-  --color-sidebarItemTextSelected: #af3a03;
+  --color-sidebarItemTextSelected: #a43a08;
   --color-sidebarBudgetName: #3c3836;
 
   /* Menu */
   --color-menuBackground: #f9f5d7;
   --color-menuItemBackground: #ebdbb2;
   --color-menuItemBackgroundHover: #d5c4a1;
-  --color-menuItemText: #3c3836;
+  --color-menuItemText: #282828;
   --color-menuItemTextHover: #282828;
-  --color-menuItemTextSelected: #af3a03;
-  --color-menuItemTextHeader: #7c6f64;
+  --color-menuItemTextSelected: #813917;
+  --color-menuItemTextHeader: #665c54;
   --color-menuBorder: #d5c4a1;
   --color-menuBorderHover: #bdae93;
-  --color-menuKeybindingText: #928374;
+  --color-menuKeybindingText: #665c54;
 
   /* Autocomplete — LIGHT (bg0_h, dark text, orange header) */
   --color-menuAutoCompleteBackground: #f9f5d7;
@@ -85,7 +86,7 @@
   --color-mobileHeaderTextHover: rgba(60, 56, 54, 0.15);
   --color-mobilePageBackground: #fbf1c7;
   --color-mobileNavBackground: #f9f5d7;
-  --color-mobileNavItem: #7c6f64;
+  --color-mobileNavItem: #665c54;
   --color-mobileNavItemSelected: #af3a03;
   --color-mobileAccountShadow: #bdae93;
   --color-mobileAccountText: #3c3836;
@@ -94,7 +95,7 @@
   --color-mobileConfigServerViewTheme: #af3a03;
 
   /* Markdown */
-  --color-markdownNormal: #458588;
+  --color-markdownNormal: #076678;
   --color-markdownDark: #076678;
   --color-markdownLight: #d5c4a1;
 
@@ -113,9 +114,9 @@
   /* Primary button — orange CTA, light text */
   --color-buttonPrimaryText: #fbf1c7;
   --color-buttonPrimaryTextHover: #f9f5d7;
-  --color-buttonPrimaryBackground: #d65d0e;
+  --color-buttonPrimaryBackground: #af3a03;
   --color-buttonPrimaryBackgroundHover: #af3a03;
-  --color-buttonPrimaryBorder: #d65d0e;
+  --color-buttonPrimaryBorder: #af3a03;
   --color-buttonPrimaryShadow: rgba(60, 56, 54, 0.2);
   --color-buttonPrimaryDisabledText: #fbf1c7;
   --color-buttonPrimaryDisabledBackground: #bdae93;
@@ -126,11 +127,11 @@
   --color-buttonNormalTextHover: #282828;
   --color-buttonNormalBackground: #f9f5d7;
   --color-buttonNormalBackgroundHover: #ebdbb2;
-  --color-buttonNormalBorder: #d5c4a1;
+  --color-buttonNormalBorder: #7c6f64;
   --color-buttonNormalShadow: rgba(60, 56, 54, 0.15);
   --color-buttonNormalSelectedText: #fbf1c7;
-  --color-buttonNormalSelectedBackground: #7c6f64;
-  --color-buttonNormalDisabledText: #928374;
+  --color-buttonNormalSelectedBackground: #665c54;
+  --color-buttonNormalDisabledText: #665c54;
   --color-buttonNormalDisabledBackground: #f9f5d7;
   --color-buttonNormalDisabledBorder: #d5c4a1;
 
@@ -140,7 +141,7 @@
   --color-buttonBareBackground: transparent;
   --color-buttonBareBackgroundHover: rgba(60, 56, 54, 0.08);
   --color-buttonBareBackgroundActive: rgba(60, 56, 54, 0.15);
-  --color-buttonBareDisabledText: #928374;
+  --color-buttonBareDisabledText: #665c54;
   --color-buttonBareDisabledBackground: transparent;
 
   /* Calendar — LIGHT (fond cream, texte sombre) */
@@ -152,28 +153,29 @@
   --color-calendarCellBackground: #ebdbb2;
 
   /* Notice (green) */
-  --color-noticeBackground: #d5c4a1;
+  --color-noticeBackground: #ebdbb2;
   --color-noticeBackgroundLight: #ebdbb2;
   --color-noticeBackgroundDark: #79740e;
-  --color-noticeText: #79740e;
-  --color-noticeTextLight: #98971a;
+  --color-noticeText: var(--color-numberPositive);
+  --color-noticeTextLight: var(--color-numberPositive);
   --color-noticeTextDark: #3c3836;
-  --color-noticeTextMenu: #b8bb26;
+  --color-noticeTextMenu: var(--color-numberPositive);
+  --color-noticeTextMenuHover: var(--color-noticeTextMenu);
   --color-noticeBorder: #79740e;
 
   /* Warning (yellow) */
   --color-warningBackground: #f2e5bc;
-  --color-warningText: #b57614;
-  --color-warningTextLight: #d79921;
+  --color-warningText: #504945;
+  --color-warningTextLight: #af3a03;
   --color-warningTextDark: #3c3836;
   --color-warningBorder: #d79921;
 
   /* Error (red) */
   --color-errorBackground: #f2e5bc;
   --color-errorText: #9d0006;
-  --color-errorTextDark: #cc241d;
+  --color-errorTextDark: #9d0006;
   --color-errorTextDarker: #3c3836;
-  --color-errorTextMenu: #fb4934;
+  --color-errorTextMenu: #9d0006;
   --color-errorBorder: #9d0006;
 
   /* Upcoming (blue/info) */
@@ -182,26 +184,26 @@
   --color-upcomingBorder: #458588;
 
   /* Forms */
-  --color-formLabelText: #7c6f64;
+  --color-formLabelText: #665c54;
   --color-formLabelBackground: #ebdbb2;
   --color-formInputBackground: #f9f5d7;
   --color-formInputBackgroundSelected: #fbf1c7;
-  --color-formInputBackgroundSelection: #d65d0e;
-  --color-formInputBorder: #d5c4a1;
+  --color-formInputBackgroundSelection: #af3a03;
+  --color-formInputBorder: #7c6f64;
   --color-formInputTextReadOnlySelection: #fbf1c7;
   --color-formInputBorderSelected: #d65d0e;
   --color-formInputText: #3c3836;
   --color-formInputTextSelected: #fbf1c7;
-  --color-formInputTextPlaceholder: #928374;
-  --color-formInputTextPlaceholderSelected: #ebdbb2;
+  --color-formInputTextPlaceholder: #665c54;
+  --color-formInputTextPlaceholderSelected: #665c54;
   --color-formInputTextSelection: #fbf1c7;
   --color-formInputShadowSelected: #d79921;
-  --color-formInputTextHighlight: #d79921;
+  --color-formInputTextHighlight: #983a0d;
 
   /* Checkbox */
   --color-checkboxText: #fbf1c7;
-  --color-checkboxBackgroundSelected: #79740e;
-  --color-checkboxBorderSelected: #79740e;
+  --color-checkboxBackgroundSelected: var(--color-numberPositive);
+  --color-checkboxBorderSelected: var(--color-numberPositive);
   --color-checkboxShadowSelected: #98971a;
   --color-checkboxToggleBackground: #928374;
   --color-checkboxToggleBackgroundSelected: #79740e;
@@ -211,21 +213,21 @@
   --color-pillBackground: #ebdbb2;
   --color-pillBackgroundLight: #f9f5d7;
   --color-pillText: #3c3836;
-  --color-pillTextHighlighted: #af3a03;
+  --color-pillTextHighlighted: #813917;
   --color-pillBorder: #d5c4a1;
   --color-pillBorderDark: #bdae93;
   --color-pillBackgroundSelected: #d5c4a1;
   --color-pillTextSelected: #282828;
   --color-pillBorderSelected: #d79921;
-  --color-pillTextSubdued: #928374;
+  --color-pillTextSubdued: #504945;
 
   /* Reports */
-  --color-reportsRed: #cc241d;
-  --color-reportsBlue: #458588;
-  --color-reportsGreen: #98971a;
-  --color-reportsGray: #928374;
+  --color-reportsRed: var(--color-numberNegative);
+  --color-reportsBlue: #076678;
+  --color-reportsGreen: var(--color-numberPositive);
+  --color-reportsGray: #665c54;
   --color-reportsLabel: #3c3836;
-  --color-reportsInnerLabel: #282828;
+  --color-reportsInnerLabel: #fbf1c7;
 
   /* Note tags */
   --color-noteTagBackground: #ebdbb2;
@@ -250,16 +252,46 @@
   --color-tooltipBorder: #d5c4a1;
 
   /* Money amounts (budget/transactions/to-budget/templates) */
-  --color-numberPositive: #79740e;
-  --color-numberNegative: #cc241d;
+  --color-numberPositive: #645f1c;
+  --color-numberNegative: #9d0006;
   --color-numberNeutral: #3c3836;
-  --color-budgetNumberZero: #7c6f64;
+  --color-budgetNumberZero: #665c54;
   --color-budgetNumberNeutral: #3c3836;
   --color-budgetNumberPositive: #3c3836;
-  --color-budgetNumberNegative: #cc241d;
-  --color-templateNumberFunded: #79740e;
-  --color-templateNumberUnderFunded: #af3a03;
-  --color-toBudgetPositive: #79740e;
-  --color-toBudgetZero: #79740e;
-  --color-toBudgetNegative: #cc241d;
+  --color-budgetNumberNegative: var(--color-numberNegative);
+  --color-templateNumberFunded: var(--color-numberPositive);
+  --color-templateNumberUnderFunded: #983a0d;
+  --color-toBudgetPositive: var(--color-numberPositive);
+  --color-toBudgetZero: var(--color-numberPositive);
+  --color-toBudgetNegative: var(--color-numberNegative);
+
+  /* Current Actual tokens: sidebar, reports, date ranges and overlays. */
+  --color-tableRowBackgroundAlternate: var(--color-tableBackground);
+  --color-tableTextItemAdded: var(--color-tableText);
+  --color-sidebarItemBackgroundSelected: #ebdbb2;
+  --color-sidebarItemTextUpdated: var(--color-sidebarItemText);
+  --color-sidebarHeaderText: var(--color-sidebarItemText);
+  --color-sidebarTextSubdued: #665c54;
+  --color-sidebarTextMuted: #665c54;
+  --color-sidebarTextPositive: var(--color-numberPositive);
+  --color-sidebarTextFailed: var(--color-numberNegative);
+  --color-sidebarBackgroundFailedSubtle: #f5e4c8;
+  --color-sidebarBorder: #d5c4a1;
+  --color-sidebarControlBackground: #ebdbb2;
+  --color-sidebarBrand: #af3a03;
+  --color-datePickerRangeBackground: #ebdbb2;
+  --color-reportsNumberPositive: var(--color-numberPositive);
+  --color-reportsNumberNegative: var(--color-numberNegative);
+  --color-reportsNumberNeutral: var(--color-numberNeutral);
+  --color-reportsChartFill: var(--color-reportsBlue);
+  --color-overlayBackground: rgba(60, 56, 54, 0.35);
+  --color-chartQual1: #9d0006;
+  --color-chartQual2: #645f1c;
+  --color-chartQual3: #076678;
+  --color-chartQual4: #8f3f71;
+  --color-chartQual5: #3f7654;
+  --color-chartQual6: #af3a03;
+  --color-chartQual7: #665c54;
+  --color-chartQual8: #3c3836;
+  --color-chartQual9: #504945;
 }

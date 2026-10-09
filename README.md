@@ -8,13 +8,14 @@ Warm, retro-groove tones — easy on the eyes, high readability.
 
 ### From the catalog
 
-Settings → *Show advanced settings* → *Experimental features* → enable **Custom themes**, then pick **Gruvbox Light** from the catalog.
+Settings → **Theme** → **Custom theme**, then choose **Gruvbox Light** from the catalog. Custom themes no longer require an experimental feature flag.
 
 ### Manual
 
-1. Enable custom themes (see above).
-2. Copy the contents of [`actual.css`](./actual.css).
-3. Settings → *Themes* → *Add custom theme* → paste the CSS.
+1. Copy the contents of [`actual.css`](./actual.css).
+2. Open Settings → **Theme** → **Custom theme**.
+3. Paste the CSS into **Custom theme CSS** and select **Apply**.
+4. When updating an existing override, use the **Custom CSS is active** button to reopen the editor.
 
 ## Palette
 
@@ -22,11 +23,15 @@ Settings → *Show advanced settings* → *Experimental features* → enable **C
 |--------------|-----------|
 | Background   | `#fbf1c7` |
 | Foreground   | `#3c3836` |
-| Accent       | `#d65d0e` |
+| Accent       | `#af3a03` |
 | Yellow       | `#d79921` |
-| Red          | `#cc241d` |
-| Green        | `#98971a` |
-| Blue         | `#458588` |
+| Red          | `#9d0006` |
+| Green        | `#645f1c` |
+| Blue         | `#076678` |
+
+The theme maps all 237 current color tokens, including the redesigned sidebar, chart palettes, date ranges and alternating rows. Contrast tints are precomputed blends of Gruvbox colors so they remain compatible with Actual’s CSS validator.
+
+Some component colors are outside the custom-theme variables, including syntax highlighting and generated chart labels. Active formula toggles reuse a primary background with bare-button text; one variable palette cannot make every conflicting use accessible. These limits need a separate upstream component change.
 
 ## Credits
 
